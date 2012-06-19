@@ -1,0 +1,15 @@
+Luminous
+--------
+To use create a config file and:
+luminous.py --config=test.cnf tenant hpcloud1
+
+or
+
+luminous.py --config=test.cnf list
+
+To show a list of configured tenants
+
+Commands so far:
+
+list nodes (where x=y)
+list secgroups

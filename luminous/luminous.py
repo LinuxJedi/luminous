@@ -9,10 +9,10 @@ from novaclient import client
 parser = argparse.ArgumentParser()
 parser.add_argument('-c', '--config', help='Cofiguration file (default /etc/luminous/luminous.cnf)', type=file)
 subparsers = parser.add_subparsers(dest='command')
-parser_list = subparsers.add_parser('list', help='List known tennants')
-parser_tennant = subparsers.add_parser('tennant', help='Connect to a tennant')
-parser_tennant.add_argument('name', help='Name of tennant to use')
-parser_tennant.add_argument('-e', '--exec', help='Execute a command in non-interactive mode', dest='exec_command')
+parser_list = subparsers.add_parser('list', help='List known tenants')
+parser_tenant = subparsers.add_parser('tenant', help='Connect to a tenant')
+parser_tenant.add_argument('name', help='Name of tenant to use')
+parser_tenant.add_argument('-e', '--exec', help='Execute a command in non-interactive mode', dest='exec_command')
 options = parser.parse_args()
 
 class Completer:
@@ -45,7 +45,7 @@ if options.command == 'list':
         print section
     exit(0)
 
-words = "status", "tennant"
+words = "status", "tenant"
 
 completer = Completer(words)
 

@@ -17,7 +17,7 @@ class Parser(object):
 
     def do_list(self, words):
         words = words[1:]
-        if not words[0]:
+        if len(words) == 0:
             print "List requires a subcommand"
             return
         else:
