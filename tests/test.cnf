@@ -1,0 +1,14 @@
+[hpcloud1]
+os_auth_url=https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/
+os_username=test
+os_password=test
+os_tenant_name=testtennant
+os_region_name=region1
+
+[hpcloud2]
+os_auth_url=https://region-a.geo-1.identity.hpcloudsvc.com:35357/v2.0/
+os_username=test
+os_password=test
+os_tenant_name=testtennant2
+os_region_name=region2
+
